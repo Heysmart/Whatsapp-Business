@@ -1,6 +1,8 @@
 body{
     margin: 0;
     padding: 0;
+    overflow-x: hidden;
+    max-width: 100%;
 }
 
 *{
@@ -98,6 +100,9 @@ header {
     color: white;
 }
 
+#hamburger-icon{
+    display: none;
+}
 
 .material-symbols-outlined {
     color: rgb(104, 206, 104);
@@ -210,26 +215,31 @@ header {
 
 .section3{
     display: grid;
-    grid-template-columns: auto auto;
-    width: 1200px;  
+    grid-template-columns: repeat(2,49%);
+    gap: 2%;
+    flex-wrap: wrap;
+    margin: 92px auto auto auto;
+    width: 1100px;  
     justify-content: space-between;
-    margin-top: 92px;
+    /* margin-top: 92px; */
 }
 
 .section3-left-content{
     border-radius: 22px;
-    width: 545px;
+    /* width: 545px; */
     height: 430px;
+    /* height: fit-content; */
     padding: 90px 55px;
-    margin-left: 120px;
+    /* margin-left: 120px; */
     box-shadow: 5px 5px 5px 5px rgb(202, 199, 199);
 }
 
 .section3-right-content{
     border: 1px solid rgb(202, 199, 199);
     border-radius: 22px;
-    width: 500px;
+    /* width: 500px; */
     height: 430px;
+    /* height: fit-content; */
     padding: 90px 55px;
     box-shadow: 5px 5px 5px 5px rgb(221, 218, 218);
 }
@@ -498,23 +508,39 @@ header {
 
 @media screen and (max-width: 960px) {
 
-    ul.center-nav {
+    ul .lists, .started {
         display: none;
+    }
+
+    #hamburger-icon{
+        display: inline-block;
     }
 
     .navbar{
         display: flex;
         justify-content: space-between;
+        width: 100%;
+    }
+
+    .language-icon{
+        margin-right: -55px;
+    }
+
+    .whatsapp-icon{
+        width: 60%;
+        margin-left: 20px;
     }
 
     .lightblue{
         height: 40px;
+        width: 100%;
     }
 
     .section1{
         display: flex;
         flex-wrap: wrap;
         height: 850px;
+        width: 100%;
     }
 
     .transform{
@@ -555,6 +581,7 @@ header {
     width: 450px;
     margin-left: 0;
     margin-left: 40px;
+    width: 80%;
 }
 
 #underline{
@@ -563,17 +590,23 @@ header {
 }
 
 .section3{
-    display: grid;
-    grid-template-columns: auto;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    row-gap: 20px;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
 }
 
 .section3-left-content{
     border-radius: 22px;
-    width: 480px;
+    /* width: 480px; */
     height: 320px;
+    width: 95%;
     padding: 40px 30px;
-    margin-left: 30px;
-    margin-top: -20px;
+    /* margin-left: 30px; */
+    /* margin-top: -20px; */
 }
 
 #section3-big-text{
@@ -588,11 +621,12 @@ header {
 .section3-right-content{
     border: 1px solid rgb(202, 199, 199);
     border-radius: 22px;
-    width: 480px;
+    /* width: 480px; */
     height: 320px;
+    width: 95%;
     padding: 40px 30px;
-    margin-left: 30px;
-    margin-top: 30px;
+    /* margin-left: 30px; */
+    /* margin-top: 30px; */
 }
 
 #section3-second-big-text{
@@ -606,7 +640,7 @@ header {
 .section4{
     margin-top: 80px;
     height: 840px;
-    width: 525px;
+    width: 100%;
     display: block;
 }
 
@@ -617,7 +651,7 @@ header {
 }
 
 #section4-woman-image{
-    width: 470px;
+    width: 95%;
     height: 320px;
     margin-top: -30px;
     margin-bottom: 36px;
@@ -630,15 +664,26 @@ header {
 
 #section4-big-text{
     font-size: 35px;
+    width: 400px;
 }
 
 .section4-right-content-border{
     width: 480px;
 }
 
-#section4-small-text1, #section4-small-text2, #section4-small-text3{
+#section4-small-text1{
     font-size: 26.6px;
-    width: 400px;
+    width: 75%;
+}
+
+#section4-small-text2{
+    /* font-size: 26.6px; */
+    /* width: 50%; */
+}
+
+#section4-small-text3{
+    font-size: 26.6px;
+    width: 100%;
 }
 
 #section4-small-text2{
@@ -648,6 +693,7 @@ header {
 .section5{
     margin-top: 50px;
     margin-left: 30px;
+    width: 100%;
 }
 
 #section5-big-text{
@@ -658,6 +704,7 @@ header {
 .arrows-section{
     display: flex;
     justify-content: space-between;
+    width: 100%;
 }
 
 .arrows-section-left-content{
@@ -669,7 +716,7 @@ header {
 }
 
 .section6{
-    width: 480px;
+    width: 100%;
     margin-left: 30px;
     height: 450px;
     margin-top: 50px;
@@ -688,7 +735,7 @@ header {
 }
 
 .section7{
-    width: 480px;
+    width: 100%;
     height: 330px;
     margin-left: 30px;
 }
@@ -708,7 +755,7 @@ header {
 }
 
 .section8{
-    width: 530px;
+    width: 100%;
     height: 470px;
     background-color: rgb(104, 206, 104);
     margin-top: -30px;
