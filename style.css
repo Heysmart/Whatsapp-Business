@@ -143,7 +143,7 @@ header {
 #section1-transform{
     font-size: 55px;
     font-family: Arial, Helvetica, sans-serif;
-    width: 400px;
+    width: 80%;
     color: rgb(104, 206, 104);
 }
 
@@ -154,6 +154,7 @@ header {
     line-height: 1.5;
     word-spacing: 2px;
     margin-top: -15px;
+    width: 79%;
 }
 
 #section1-link{
@@ -181,7 +182,8 @@ header {
 }
 
 .phone>img{
-    height: 450px;
+    width: 75%;
+    height: auto;
     margin-top: 100px;
     margin-left: 30px;
 }
@@ -508,6 +510,13 @@ header {
 
 @media screen and (max-width: 960px) {
 
+    body{
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    max-width: 100%;
+    }
+
     ul .lists, .started {
         display: none;
     }
@@ -551,6 +560,10 @@ header {
 
     #section1-transform{
         font-size: 32px;
+    }
+
+    #section1-text{
+        width: 97%;
     }
 
     .phone{
@@ -731,7 +744,7 @@ header {
 }
 
 .section6>img{
-    width: 80%;
+    width: 85%;
     height: 300px;
     margin-left: 30px;
 }
@@ -786,6 +799,29 @@ header {
         width: 600px;
     } */
 
+}
+
+/* css code responsiveness for 500px  */
+
+@media screen and (max-width:460px) {
+
+    body {
+        margin: 0;
+        padding: 0;
+        overflow-x: hidden;
+        max-width: 100%;
+        box-sizing: border-box;
+    }
+
+    .whatsapp-icon{
+        width: 80%;
+    }
+
+    .phone>img{
+        width: 300px;
+        height: 300px;
+        margin-left: 0px;
+    }
 }
 
 
