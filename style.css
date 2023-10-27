@@ -832,7 +832,7 @@ header {
     #section2-big-text{
     font-weight: bolder;
     width: 88%;
-    margin: 0 auto;
+    margin: 0 auto 50px auto;
     }
 }
 
