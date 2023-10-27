@@ -826,7 +826,7 @@ header {
     .phone>img{
         width: 320px;
         height: 320px;
-        margin: 0 auto;
+        margin: 100px auto 0 auto;
     }
 
     #section2-big-text{
