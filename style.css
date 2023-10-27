@@ -817,6 +817,10 @@ header {
         width: 80%;
     }
 
+    .language-icon{
+        margin: 0;
+    }
+
     .phone>img{
         width: 300px;
         height: 300px;
