@@ -822,12 +822,12 @@ header {
     }
 
     #section1-text{
-        width: 75%;
+        width: 73%;
     }
 
     .phone>img{
-        width: 400px;
-        height: 400px;
+        width: 320px;
+        height: 320px;
         margin-left: 0px;
     }
 }
