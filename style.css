@@ -591,8 +591,6 @@ header {
     font-size: 33.6px;
     font-family: Arial, Helvetica, sans-serif;
     text-align: center;
-    width: 450px;
-    margin-left: 0;
     margin-left: 40px;
     width: 80%;
 }
@@ -829,6 +827,11 @@ header {
         width: 320px;
         height: 320px;
         margin-left: 0px;
+    }
+
+    #section2-big-text{
+    font-weight: bolder;
+    width: 88%;
     }
 }
 
